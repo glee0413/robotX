@@ -7,7 +7,7 @@ xmind:记录开发思路
 ### 2.1 teambistion来进行项目管理
 ### 2.2 EA来进行设计
 ### 2.3 smartgit来进行版本控制
-> 由于github的CDN的域名被墙，可以用dns查询工具网站http://tool.chinaz.com/dns 查看assets-cdn.github.com，选择 
+> 由于github的CDN的域名被墙，可以用dns查询工具网站http://tool.chinaz.com/dns 查看assets-cdn.github.com，选择ttl最小的eg:151.101.100.133 assets-cdn.github.com.
 
 
 
