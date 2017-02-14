@@ -5,6 +5,8 @@
 #include <getopt.h>
 
 #include "CmdParser.h"
+#include "Singleton.h"
+#include "JSONConfigureFile.h"
 using namespace Utils;
 
 struct option CmdParser::m_lprLongOption[] = {
@@ -28,7 +30,7 @@ int Utils::CmdParser::parseCmd(int argc, char **argv) {
     while( (c = getopt_long(argc,argv,CmdParser::m_lprShortOption,CmdParser::m_lprLongOption,NULL)) != -1 ){
         switch(c){
             case 'c':
-                UTILS::Singleton<UTILS::Configure>::Instance()->SetConfigFile(optarg);
+                Utils::Singleton<Utils::JSONConfigureFile>::Instance()->readConfigureFile(optarg);
                 break;
             default:
                 break;
